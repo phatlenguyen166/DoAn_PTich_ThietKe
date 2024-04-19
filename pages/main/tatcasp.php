@@ -22,7 +22,7 @@
   <?php 
 
    while($row_sp2 = mysqli_fetch_array($query_sp2)){ ?>
-    <button class="btn" id="btn-brand<?php echo $row_sp2['id_loaisp'] ?>" onclick="filterSelection('danhmuc<?php echo $row_sp2['id_loaisp'] ?>')"> <?php echo $row_sp2['tenloaisp'] ?></button>
+    <button class="btn" id="btn-loaisp<?php echo $row_sp2['id_loaisp'] ?>" onclick="filterSelection('danhmuc<?php echo $row_sp2['id_loaisp'] ?>')"> <?php echo $row_sp2['tenloaisp'] ?></button>
    <?php  }?>
   
  
